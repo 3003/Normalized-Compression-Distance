@@ -32,19 +32,24 @@ File C contents compressed
 	4xA,5xB,PQ
 
 To get a similarity measure between files, you add two files together and look at the length of their compression.
-File A contents + File B contents compressed
 
+File A contents + File B contents and RLE compressed
+
+	CCCCCCCCCCCCCCCCCCCCCCCA
 	23xC,A
 	
-Which gives a length of 6
+Which gives a compressed length of 6 (uncompressed length of 24)
 
-File B contents + File C contents compressed
+File B contents + File C contents and RLE compressed
 
+	CCCCCCCCCCCAAAAABBBBBBPQ
 	11xC,5xA,5xB,PQ
 	
-Which gives a length of 10
+Which gives a compressed length of 10 (uncompressed length of 24)
 
-As the files are of equal length, we don't need normalization to spot that File A and File B are more alike, than File B and File C.
+As the files are already of equal length, we don't need normalization to spot that File A and File B are more alike, than File B and File C.
+
+NCD is an approximation. We would like to use the Kolmogorov Complexity (KC) for a string, but KC is incomputable. Better compressors are valuable to increase NCD's accuracy, so much so that Marcus Hutter made a price for it (50'000€ Prize for Compressing Human Knowledge)[http://prize.hutter1.net/]
 
 ###Uses of NCD###
 NCD gives a similarity measure between two files or data streams which can be used to cluster, classify, compare, or even fed to autonomous agents.
