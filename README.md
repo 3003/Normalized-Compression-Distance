@@ -47,7 +47,7 @@ File B contents + File C contents
 
 	CCCCCCCCCCCAAAAABBBBBBPQ
 
-and File A + File B compressed
+File B + File C compressed
 	
 	11xC,5xA,6xB,PQ
 	
