@@ -56,7 +56,7 @@ File B + File C compressed
 	
 	11xC,5xA,6xB,PQ
 	
-Which gives a compressed length of 10.
+Which gives a compressed length of 15.
 
 As the files are already of equal length, we don't need normalization to spot that File A and File B are more alike, than File B and File C.
 
