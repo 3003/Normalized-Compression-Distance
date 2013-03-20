@@ -4,6 +4,11 @@ Experiments and research into Normalized Compression Distance (NCD).
 ##What is NCD?##
 NCD, in layman terms, works on the principle that two files which share data patterns compress better when you add them together, than two files which don't share data patterns, since compressors are more efficient when dealing with repeating data patterns.
 
+Further reading:
+- [http://en.wikipedia.org/wiki/Normalized_Compression_Distance](http://en.wikipedia.org/wiki/Normalized_Compression_Distance)
+- [http://complearn.org/ncd.html](http://complearn.org/ncd.html)
+- [Clustering by compression [pdf]](http://homepages.cwi.nl/~paulv/papers/cluster.pdf)
+
 ###Very simple example###
 File A contents
 
