@@ -62,9 +62,9 @@ NCD gives a similarity measure between two files or data streams which can be us
 
 ##clusterchessgames.py##
 ###Description###
-Clusters 21 files containing game data from 7 Grandmasters. All games played a Grandmaster with white are stored inside a .txt file. This .txt file is split up in 3 smaller .txt files, which are randomized and stripped of meta-data (like the dates, locations, tournament or player names). 
+Clusters 21 files containing game data from 7 Grandmasters. All games played by a Grandmaster with the white pieces are stored inside a .txt file. This .txt file is split up in 3 smaller .txt files, which are randomized and stripped of meta-data (like the dates, locations, tournament or player names). 
 
-The challenge is to create 7 clusters containing the game data files belonging to the same Grandmaster. Opponents moves are kept inside the data, which makes less of the data indicative of the Grandmaster's patterns we hope to find. This adds to the challenge.
+The challenge is to create 7 clusters containing the game data files belonging to the same Grandmaster. Opponent moves not stripped from the data. This makes the data less indicative of the Grandmaster's unique style (data patterns) we hope to find. This adds to the challenge.
 
 Expert knowledge or chess domain knowledge isn't required for good results. An International Master confronted with this challenge claimed the challenge is impossible to do by hand and would take hours to even analyze.
 ###Dependancies###
